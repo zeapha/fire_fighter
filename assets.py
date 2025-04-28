@@ -35,23 +35,6 @@ def load_image(name, scale=1.0):
     elif name == "power_washer":
         surface = pygame.Surface((70, 70))
         surface.fill(BLUE)
-    
-    # For fires we'll make different sized circles
-    elif name == "fire_tiny":
-        surface = pygame.Surface((30, 30), pygame.SRCALPHA)
-        pygame.draw.circle(surface, RED, (15, 15), 15)
-    elif name == "fire_small":
-        surface = pygame.Surface((40, 40), pygame.SRCALPHA)
-        pygame.draw.circle(surface, ORANGE, (20, 20), 20)
-    elif name == "fire_medium":
-        surface = pygame.Surface((50, 50), pygame.SRCALPHA)
-        pygame.draw.circle(surface, YELLOW, (25, 25), 25)
-    elif name == "fire_large":
-        surface = pygame.Surface((60, 60), pygame.SRCALPHA)
-        pygame.draw.circle(surface, RED, (30, 30), 30)
-    elif name == "fire_huge":
-        surface = pygame.Surface((70, 70), pygame.SRCALPHA)
-        pygame.draw.circle(surface, ORANGE, (35, 35), 35)
     else:
         # Default empty surface
         surface = pygame.Surface((50, 50))
